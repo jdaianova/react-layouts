@@ -1,38 +1,112 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
+    width: 990px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.icon-switch {
+    width: 990px;
+    padding: 30px;
+    text-align: right;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.material-icons {
+    color: rgb(220, 211, 211);
+    font-size: 35px;
+    border: none;
+    cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cards-view {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.shop-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(245, 245, 245);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 5px 5px gray;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.shop-card img {
+    width: 180px;
+}
+
+.shop-card-bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-view {
+    width: 960px;
+}
+
+.price {
+    color: red;
+}
+
+.cart-btn {
+    text-transform: uppercase;
+    color: red;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid red;
+}
+
+.list-view-item {
+    background-color: rgb(245, 245, 245);
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-view-item img {
+    height: 100px;
+}
+
+.list-view-item-img {
+    flex-basis: 20%;
+    text-align: center;
+}
+
+.list-view-name {
+    flex-basis: 40%;
+    text-align: center;
+}
+
+.list-view-color {
+    flex-basis: 10%;
+    text-align: center;
+}
+
+.list-view-price {
+    flex-basis: 10%;
+    text-align: center;
+}
+
+.list-view-cart-btn {
+    flex-basis: 20%;
+    text-align: center;
 }
